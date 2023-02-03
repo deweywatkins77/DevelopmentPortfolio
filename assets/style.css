@@ -1,0 +1,47 @@
+
+:root{
+    --nav-menu-bg: white;
+    --nav-menu-text: rgb(224, 36, 36);
+    --nav-menu-border: lightgrey;
+    --nav-menu-shadow: black;
+    --body: white;
+    --aside-text: darkgrey;
+    --card-name: grey;
+    --card-desc: lightgrey;
+    --card-highlight: aqua;
+    --footer-text: blue;
+}
+
+header {
+    position: static;
+    height: 200px;
+    width: auto;
+    margin: -8px -8px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    background-image: url("./images/background-header.jpg");
+    background-size: cover;
+}
+
+header h1 {
+    height: 80%;
+    border: 2px solid red;
+}
+
+header ul li {
+    display: inline-flex;
+    list-style: none;
+    border: 1px solid var(--nav-menu-border);
+    border-radius: 20px;
+    box-shadow: 3px 3px 0px 0px var(--nav-menu-shadow);
+    color: var(--nav-menu-text);
+    background-color: var(--nav-menu-bg);
+    margin-right: 15px;
+    padding: 5px;
+}
+
+header ul li a:link, a:visited {
+    text-decoration: none;
+    color: cyan;
+}
