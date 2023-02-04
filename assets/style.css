@@ -5,9 +5,10 @@
     --nav-menu-border: lightgrey;
     --nav-menu-shadow: black;
     --body: white;
-    --aside-text: darkgrey;
-    --card-name: grey;
-    --card-desc: lightgrey;
+    --main-h2-text: darkgrey;
+    --main-p-border: blue;
+    --card-text: grey;
+    --card-text-bg: teal;
     --card-highlight: aqua;
     --footer-text: blue;
 }
@@ -26,7 +27,6 @@ header {
 
 header h1 {
     height: 80%;
-    border: 2px solid red;
 }
 
 header ul li {
@@ -44,4 +44,90 @@ header ul li {
 header ul li a:link, a:visited {
     text-decoration: none;
     color: cyan;
+}
+
+main {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+
+main section {
+    display: flex;
+    margin: 20px 25px;
+}
+
+main section h2 {
+    width: 25%;
+    height: auto;
+    margin: auto;
+}
+
+main section p, main section ul {
+    width: 75%;
+    padding-left: 25px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    border-left: 3px solid var(--main-p-border);
+}
+
+.cardcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 0px;
+    width: 75%;
+    border-left: 3px solid var(--main-p-border);
+}
+
+.projectcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-size: cover;
+    opacity: .5;
+    margin: 5px 0px 0px 25px;
+    height: 150px;
+    width: 46%;
+}
+
+.big {
+    margin: 0px 0px 0px 25px;
+    height: 300px;
+    width: 100%;
+}
+
+.cardtext {
+    display: block;
+    border: none;
+    margin: 10px 10px;
+    padding: 5px 15px;
+    width: auto;
+    color: var(--card-text);
+    background-color: var(--card-text-bg);
+}
+
+
+/* Set background image information for project cards*/
+.img-portfolio{
+    background-image: url('./images/portfolio.jpg'); 
+}
+
+.img-horiseon{
+    background-image: url('./images/portfolio.jpg'); 
+}
+
+.img-camera{
+    background-image: url('./images/portfolio.jpg'); 
+}
+
+.img-glow{
+    background-image: url('./images/glow.jpg'); 
+}
+
+.img-primes{
+    background-image: url('./images/portfolio.jpg'); 
 }
