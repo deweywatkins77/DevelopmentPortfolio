@@ -165,3 +165,11 @@ css for images after this section
 .img-primes{
     background-image: url('./images/python.jfif'); 
 }
+
+@media only screen and (max-width: 768px){
+    a:link, a:visited {
+        text-decoration: none;
+        color: var(--nav-menu-text);
+        font-size: larger;
+    }
+}
