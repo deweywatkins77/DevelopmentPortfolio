@@ -13,7 +13,7 @@
     --main-h2-fam2: helvetica;
     --main-h2-fontsize: 32px;
     --main-h2-fontcolor: rgb(97, 95, 95);
-    --main-seperate-border: rgb(1,146,229);
+    --main-seperate-border: teal; /* rgb(1,146,229);*/
     --card-color-text: grey;
     --card-text-bg: teal;
     --card-border: rgb(11, 224, 214);
@@ -71,7 +71,7 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: space-between;
+
 }
 
 main section {
@@ -118,7 +118,7 @@ css for images after this section
     opacity: .5;
     margin: 10px 0px 0px 25px;
     height: 150px;
-    width: 44.5%;
+    width: 45.5%;
     background-size: cover;
     border:1px solid var(--card-border);
 
@@ -166,10 +166,69 @@ css for images after this section
     background-image: url('./images/python.jfif'); 
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 960px){
     a:link, a:visited {
         text-decoration: none;
         color: var(--nav-menu-text);
         font-size: 24px;
+    }
+    
+    header ul{
+        width: 50%;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        float: right;
+    }
+
+    main {
+        width: 100%;
+        align-items: center;
+    }
+
+    main section {
+        display: flex;
+        flex-direction: column;
+        margin: 10px auto;
+        width: 100%
+    }
+
+    main section h2 {
+        width: 100%;
+        margin: auto;
+        padding: 0px;
+        text-align: center;
+    }
+
+    main section p, main section ul {
+        width: 100%;
+        border-top: 3px solid var(--main-seperate-border);
+        border-left: none;
+        padding-left: 0px;
+        padding-top: 10px;
+        margin: 10px auto;
+    }
+
+
+
+    .cardcontainer {
+        width: 100%;
+        margin-top: 10px;
+        padding: 0px;
+        border-top: 3px solid var(--main-seperate-border);
+        border-left: none;
+    }
+
+    .big {
+        margin: auto;
+        padding: 0px;
+        height: 300px;
+        width: 100%;
+
+    }
+    .projectcard {
+        width: 100%;
+        margin: 10px auto;
+        padding: 0px;
     }
 }
