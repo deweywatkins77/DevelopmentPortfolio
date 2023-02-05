@@ -1,18 +1,25 @@
-
+/* Set color variables */
 :root{
     --nav-menu-bg: white;
-    --nav-menu-text: rgb(224, 36, 36);
+    --nav-menu-text: teal;
     --nav-menu-border: lightgrey;
     --nav-menu-shadow: black;
+    --nav-profile-text: white;
     --body: white;
-    --main-h2-text: darkgrey;
+    --main-h2-fontstyle1: helvetica;
+    --main-h2-fontstyle2: verdana;
+    --main-h2-fontsize: 32px;
+    --main-h2-fontcolor: rgb(97, 95, 95);
     --main-p-border: blue;
     --card-text: grey;
     --card-text-bg: teal;
     --card-highlight: aqua;
+    --card-border: rgb(11, 224, 214);
     --footer-text: blue;
+
 }
 
+/* create menu layout to including image and name on the left */
 header {
     position: static;
     height: 200px;
@@ -27,6 +34,8 @@ header {
 
 header h1 {
     height: 80%;
+    padding-left: 20px;
+    color: var(--nav-profile-text);
 }
 
 header ul li {
@@ -41,11 +50,23 @@ header ul li {
     padding: 5px;
 }
 
-header ul li a:link, a:visited {
+a:link, a:visited {
     text-decoration: none;
-    color: cyan;
+    color: var(--nav-menu-text);
 }
 
+header ul li:active {
+    box-shadow: 1px 1px 0px 0px black;
+}
+
+.profile {
+    display: flex;
+    align-items: flex-end;
+}
+/* 
+Main Content - about me, projects, contact me 
+sections divided by blue border 
+*/
 main {
     width: 100%;
     display: inline-flex;
@@ -62,6 +83,9 @@ main section h2 {
     width: 25%;
     height: auto;
     margin: auto;
+    font-style: var(--main-h2-fontstyle1) var(--main-h2-fontstyle2);
+    font-size: var(--main-h2-fontsize);
+    color: var(--main-h2-fontcolor);
 }
 
 main section p, main section ul {
@@ -73,6 +97,10 @@ main section p, main section ul {
     border-left: 3px solid var(--main-p-border);
 }
 
+/*
+Project Cards, first one is larger img's are background images
+css for images after this section
+*/
 .cardcontainer {
     display: flex;
     flex-wrap: wrap;
@@ -87,12 +115,19 @@ main section p, main section ul {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    background-size: cover;
     opacity: .5;
-    margin: 5px 0px 0px 25px;
+    margin: 10px 0px 0px 25px;
     height: 150px;
-    width: 46%;
+    width: 45.5%;
+    background-size: cover;
+    border:1px solid var(--card-border);
+
 }
+
+.projectcard:hover{
+    transition: all .7s ease-in-out;
+    opacity: 1;
+} 
 
 .big {
     margin: 0px 0px 0px 25px;
@@ -110,24 +145,23 @@ main section p, main section ul {
     background-color: var(--card-text-bg);
 }
 
-
-/* Set background image information for project cards*/
+/* Set background image information for project cards */
 .img-portfolio{
     background-image: url('./images/portfolio.jpg'); 
 }
 
 .img-horiseon{
-    background-image: url('./images/portfolio.jpg'); 
+    background-image: url('./images/horiseon.jpg'); 
 }
 
 .img-camera{
-    background-image: url('./images/portfolio.jpg'); 
+    background-image: url('./images/cameraflip.jpg'); 
 }
 
 .img-glow{
-    background-image: url('./images/glow.jpg'); 
+    background-image: url('./images/glowsmall.jpg'); 
 }
 
 .img-primes{
-    background-image: url('./images/portfolio.jpg'); 
+    background-image: url('./images/python.jfif'); 
 }
