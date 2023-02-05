@@ -1,22 +1,22 @@
 /* Set color variables */
 :root{
+    --nav-profile-text: white;
+    --nav-profile-fam1: serif;
+    --nav-profile-fam2: helvetica;
     --nav-menu-bg: white;
     --nav-menu-text: teal;
     --nav-menu-border: lightgrey;
     --nav-menu-shadow: black;
-    --nav-profile-text: white;
+    --nav-shadow-active: black;
     --body: white;
-    --main-h2-fontstyle1: helvetica;
-    --main-h2-fontstyle2: verdana;
+    --main-h2-fam1: serif;
+    --main-h2-fam2: helvetica;
     --main-h2-fontsize: 32px;
     --main-h2-fontcolor: rgb(97, 95, 95);
-    --main-p-border: blue;
-    --card-text: grey;
+    --main-seperate-border: rgb(1,146,229);
+    --card-color-text: grey;
     --card-text-bg: teal;
-    --card-highlight: aqua;
     --card-border: rgb(11, 224, 214);
-    --footer-text: blue;
-
 }
 
 /* create menu layout to including image and name on the left */
@@ -36,6 +36,7 @@ header h1 {
     height: 80%;
     padding-left: 20px;
     color: var(--nav-profile-text);
+    font-family: var(--nav-profile-fam1), var(--nav-profile-fam2)
 }
 
 header ul li {
@@ -44,7 +45,6 @@ header ul li {
     border: 1px solid var(--nav-menu-border);
     border-radius: 20px;
     box-shadow: 3px 3px 0px 0px var(--nav-menu-shadow);
-    color: var(--nav-menu-text);
     background-color: var(--nav-menu-bg);
     margin-right: 15px;
     padding: 5px;
@@ -56,9 +56,9 @@ a:link, a:visited {
 }
 
 header ul li:active {
-    box-shadow: 1px 1px 0px 0px black;
+    box-shadow: 1px 1px 0px 0px var(--nav-shadow-active);
 }
-
+/* Align the profile pick with profile name text */
 .profile {
     display: flex;
     align-items: flex-end;
@@ -69,7 +69,7 @@ sections divided by blue border
 */
 main {
     width: 100%;
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     align-items: space-between;
 }
@@ -83,7 +83,7 @@ main section h2 {
     width: 25%;
     height: auto;
     margin: auto;
-    font-style: var(--main-h2-fontstyle1) var(--main-h2-fontstyle2);
+    font-family: var(--main-h2-fontfam1), var(--main-h2-fontfam2);
     font-size: var(--main-h2-fontsize);
     color: var(--main-h2-fontcolor);
 }
@@ -94,11 +94,11 @@ main section p, main section ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
-    border-left: 3px solid var(--main-p-border);
+    border-left: 3px solid var(--main-seperate-border);
 }
 
 /*
-Project Cards, first one is larger img's are background images
+Project Cards, first one is larger and img's are background images
 css for images after this section
 */
 .cardcontainer {
@@ -107,7 +107,7 @@ css for images after this section
     justify-content: space-between;
     margin-left: 0px;
     width: 75%;
-    border-left: 3px solid var(--main-p-border);
+    border-left: 3px solid var(--main-seperate-border);
 }
 
 .projectcard {
@@ -118,7 +118,7 @@ css for images after this section
     opacity: .5;
     margin: 10px 0px 0px 25px;
     height: 150px;
-    width: 45.5%;
+    width: 44.5%;
     background-size: cover;
     border:1px solid var(--card-border);
 
@@ -141,7 +141,7 @@ css for images after this section
     margin: 10px 10px;
     padding: 5px 15px;
     width: auto;
-    color: var(--card-text);
+    color: var(--card-text-color);
     background-color: var(--card-text-bg);
 }
 
