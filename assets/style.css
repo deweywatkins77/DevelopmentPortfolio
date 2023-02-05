@@ -145,7 +145,7 @@ css for images after this section
     background-color: var(--card-text-bg);
 }
 
-/* Set background image information for project cards */
+/* Set background image information for project cards and links */
 .img-portfolio{
     background-image: url('./images/portfolio.jpg'); 
 }
