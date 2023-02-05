@@ -174,7 +174,7 @@ css for images after this section
     }
     
     header ul{
-        width: 50%;
+        width: 40%;
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-end;
