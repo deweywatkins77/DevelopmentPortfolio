@@ -170,6 +170,6 @@ css for images after this section
     a:link, a:visited {
         text-decoration: none;
         color: var(--nav-menu-text);
-        font-size: larger;
+        font-size: 24px;
     }
 }
