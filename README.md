@@ -1,7 +1,7 @@
 # Development Portfolio
 
 ## Description
-Need a website to display my deveolpment portfolio and show off some skills for interviewers.
+Need a website to display my deveolpment portfolio.
 
 
 ## Installation
