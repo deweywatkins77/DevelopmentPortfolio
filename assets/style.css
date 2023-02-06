@@ -39,6 +39,7 @@ header h1 {
     font-family: var(--nav-profile-fam1), var(--nav-profile-fam2)
 }
 
+
 header ul li {
     display: inline-flex;
     list-style: none;
@@ -166,7 +167,7 @@ css for images after this section
     background-image: url('./images/python.jfif'); 
 }
 
-@media only screen and (max-width: 960px){
+@media only screen and (max-width: 910px){
     a:link, a:visited {
         text-decoration: none;
         color: var(--nav-menu-text);
@@ -179,6 +180,12 @@ css for images after this section
         justify-content: flex-end;
         align-items: flex-end;
         float: right;
+    }
+
+    header ul li {
+        margin: 10px 0px 0px 0px;
+        width: 125px;
+        text-align: center;
     }
 
     main {
