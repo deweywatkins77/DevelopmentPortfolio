@@ -1,22 +1,25 @@
 /* Set color variables */
 :root{
     --nav-profile-text: white;
-    --nav-profile-fam1: serif;
+    --nav-profile-fam1: arial;
     --nav-profile-fam2: helvetica;
+    --nav-profile-fontsize: 48px;
     --nav-menu-bg: white;
-    --nav-menu-text: teal;
+    --nav-menu-text: rgb(11, 12, 56);
     --nav-menu-border: lightgrey;
-    --nav-menu-shadow: black;
+    --nav-menu-shadow: rgb(11, 12, 56);
     --nav-shadow-active: black;
     --body: white;
-    --main-h2-fam1: serif;
-    --main-h2-fam2: helvetica;
+    --main-h2-fontfam1: arial;
+    --main-h2-fontfam2: helvetica;
     --main-h2-fontsize: 32px;
-    --main-h2-fontcolor: rgb(97, 95, 95);
-    --main-seperate-border: teal; /* rgb(1,146,229);*/
+    --main-h2-fontcolor: rgb(11, 12, 56);
+    --main-p-fontsize: 20px;
+    --main-p-fontcolor: rgb(11, 12, 56);
+    --main-seperate-border: rgb(69, 148, 221); /* rgb(1,146,229);*/
     --card-color-text: grey;
-    --card-text-bg: teal;
-    --card-border: rgb(11, 224, 214);
+    --card-text-bg: rgb(69, 148, 221);
+    --card-border: rgb(11, 12, 56);
 }
 
 /* create menu layout to including image and name on the left */
@@ -33,10 +36,11 @@ header {
 }
 
 header h1 {
-    height: 80%;
     padding-left: 20px;
     color: var(--nav-profile-text);
-    font-family: var(--nav-profile-fam1), var(--nav-profile-fam2)
+    font-family: var(--nav-profile-fam1), var(--nav-profile-fam2);
+    font-size: var(--nav-profile-fontsize);
+    margin-bottom: -1px;
 }
 
 
@@ -54,6 +58,7 @@ header ul li {
 a:link, a:visited {
     text-decoration: none;
     color: var(--nav-menu-text);
+    font-size: 20px;
 }
 
 header ul li:active {
@@ -84,7 +89,7 @@ main section h2 {
     width: 25%;
     height: auto;
     margin: auto;
-    font-family: var(--main-h2-fontfam1), var(--main-h2-fontfam2);
+    font-family: var(--main-h2-fontfam1) , var(--main-h2-fontfam2);
     font-size: var(--main-h2-fontsize);
     color: var(--main-h2-fontcolor);
 }
@@ -96,6 +101,8 @@ main section p, main section ul {
     display: flex;
     justify-content: space-around;
     border-left: 3px solid var(--main-seperate-border);
+    font-size: var(--main-p-fontsize);
+    color: var(--main-p-fontcolor);
 }
 
 /*
