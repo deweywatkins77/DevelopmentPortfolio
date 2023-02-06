@@ -248,6 +248,13 @@ css for images after this section
         float: right;
     }
 
+    header ul li {
+        margin: 10px auto 0px;
+        width: 150px;
+        text-align: center;
+        padding-right: 20px;
+    }
+
     main {
         width: 100%;
         align-items: center;
