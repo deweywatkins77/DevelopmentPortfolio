@@ -232,3 +232,70 @@ css for images after this section
         padding: 0px;
     }
 }
+
+@media only screen and (max-device-width: 480px){
+    a:link, a:visited {
+        text-decoration: none;
+        color: var(--nav-menu-text);
+        font-size: 24px;
+    }
+    
+    header ul{
+        width: 40%;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        float: right;
+    }
+
+    main {
+        width: 100%;
+        align-items: center;
+    }
+
+    main section {
+        display: flex;
+        flex-direction: column;
+        margin: 10px auto;
+        width: 100%
+    }
+
+    main section h2 {
+        width: 100%;
+        margin: auto;
+        padding: 0px;
+        text-align: center;
+    }
+
+    main section p, main section ul {
+        width: 100%;
+        border-top: 3px solid var(--main-seperate-border);
+        border-left: none;
+        padding-left: 0px;
+        padding-top: 10px;
+        margin: 10px auto;
+    }
+
+
+
+    .cardcontainer {
+        width: 100%;
+        margin-top: 10px;
+        padding: 0px;
+        border-top: 3px solid var(--main-seperate-border);
+        border-left: none;
+    }
+
+    .big {
+        margin: auto;
+        padding: 0px;
+        height: 300px;
+        width: 100%;
+
+    }
+    .projectcard {
+        width: 100%;
+        margin: 10px auto;
+        padding: 0px;
+    }
+}
