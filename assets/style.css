@@ -181,35 +181,39 @@ css for images after this section
         font-size: 24px;
     }
     
-    header ul{
+    header ul {
         width: 40%;
+        height: 100%;
+        display: flex;
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-end;
-        float: right;
+        margin: 0px 20px 0px 0px;
+        padding: 0px;
     }
 
     header ul li {
-        margin: 10px 0px 0px 0px;
+        margin: 10px auto;
         width: 125px;
         text-align: center;
+        padding: 0px 0px 0px 10px;
     }
 
     main {
         width: 100%;
+        margin-top: 20px;
         align-items: center;
     }
 
     main section {
         display: flex;
         flex-direction: column;
-        margin: 10px auto;
+        margin: 20px auto;
         width: 100%
     }
 
     main section h2 {
         width: 100%;
-        margin: auto;
         padding: 0px;
         text-align: center;
     }
@@ -219,31 +223,29 @@ css for images after this section
         border-top: 3px solid var(--main-seperate-border);
         border-left: none;
         padding-left: 0px;
-        padding-top: 10px;
-        margin: 10px auto;
+        padding-top: 15px;
+        margin: 15px auto;
     }
-
-
 
     .cardcontainer {
         width: 100%;
-        margin-top: 10px;
+        margin: 18px 0px 0px 0px;
         padding: 0px;
         border-top: 3px solid var(--main-seperate-border);
         border-left: none;
     }
 
-    .big {
-        margin: auto;
-        padding: 0px;
-        height: 300px;
-        width: 100%;
-
-    }
     .projectcard {
         width: 100%;
         margin: 10px auto;
         padding: 0px;
+    }
+
+    .big {
+        margin: 15px auto 0px;
+        height: 300px;
+        width: 100%;
+
     }
 }
 
@@ -254,36 +256,39 @@ css for images after this section
         font-size: 24px;
     }
     
-    header ul{
+    header ul {
         width: 40%;
+        height: 100%;
+        display: flex;
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-end;
-        float: right;
+        margin: 0px 20px 0px 0px;
+        padding: 0px;
     }
 
     header ul li {
-        margin: 10px auto 0px;
-        width: 150px;
+        margin: 10px auto;
+        width: 125px;
         text-align: center;
-        padding-right: 20px;
+        padding: 0px 0px 0px 10px;
     }
 
     main {
         width: 100%;
+        margin-top: 20px;
         align-items: center;
     }
 
     main section {
         display: flex;
         flex-direction: column;
-        margin: 10px auto;
+        margin: 20px auto;
         width: 100%
     }
 
     main section h2 {
         width: 100%;
-        margin: auto;
         padding: 0px;
         text-align: center;
     }
@@ -293,30 +298,28 @@ css for images after this section
         border-top: 3px solid var(--main-seperate-border);
         border-left: none;
         padding-left: 0px;
-        padding-top: 10px;
-        margin: 10px auto;
+        padding-top: 15px;
+        margin: 15px auto;
     }
-
-
 
     .cardcontainer {
         width: 100%;
-        margin-top: 10px;
+        margin: 18px 0px 0px 0px;
         padding: 0px;
         border-top: 3px solid var(--main-seperate-border);
         border-left: none;
     }
 
-    .big {
-        margin: auto;
-        padding: 0px;
-        height: 300px;
-        width: 100%;
-
-    }
     .projectcard {
         width: 100%;
         margin: 10px auto;
         padding: 0px;
+    }
+
+    .big {
+        margin: 15px auto 0px;
+        height: 300px;
+        width: 100%;
+
     }
 }
